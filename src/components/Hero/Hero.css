@@ -1,0 +1,125 @@
+.hero{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 100px 170px 20px 170px;
+}
+.hero-content{
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    max-width: 1400px;
+}
+.hero img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 10px 40px rgba(180, 21, 255, 0.3);
+    flex-shrink: 0;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+}
+.hero h1{
+    text-align: left;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.hero h1 .intro{
+    color: #E0E0E0;
+}
+.hero h1 .name{
+    background: linear-gradient(135deg, #B415FF 0%, #DF8908 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+.hero h1 .role{
+    color: #FFFFFF;
+    font-weight: 600;
+}
+.hero p{
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+    color: #B0B0B0;
+    font-weight: 400;
+}
+.hero-action{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.hero-connect{
+    padding: 14px 28px;
+    border-radius: 50px;
+    background: linear-gradient(135deg,#B415FF 0%,#DF8908 100%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.hero-connect:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(180, 21, 255, 0.4);
+}
+.hero-resume{
+    padding: 14px 35px;
+    border-radius: 50px;
+    border: 2px solid #B415FF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+.hero-resume:hover{
+    background: rgba(180, 21, 255, 0.1);
+    transform: translateY(-2px);
+}
+@media (max-width:768px) {
+    .hero{
+        padding: 50px 20px;
+        min-height: auto;
+    }
+    .hero-content{
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+    .hero img{
+        width: 250px;
+        height: 250px;
+    }
+    .hero h1{
+        text-align: center;
+        font-size: 32px;
+    }
+    .hero p{
+        text-align: center;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .hero-action{
+        gap: 16px;
+        font-size: 18px;
+        font-weight: 500;
+        justify-content: center;
+    }
+    .hero-connect{
+        padding: 20px 30px;
+        border-radius: 40px;
+    }
+    .hero-resume{
+        padding: 20px 50px;
+        border-radius: 40px;
+    }
+}
