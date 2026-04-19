@@ -92,15 +92,54 @@
 
 @media (max-width:768px) {
    .footer{
-    margin: 50px 70px;
+    margin: 50px 20px;
    }
    .footer-top{
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
+   }
+   .footer-top p{
+    font-size: 16px;
+   }
+   .footer-top-right{
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+   }
+   .footer-email-input{
+    width: 100%;
+    padding: 15px 20px;
+    padding-right: 20px;
+   }
+   .footer-email-input input{
+    width: 100%;
+    font-size: 16px;
+   }
+   .footer-subscribe{
+    width: 100%;
+    font-size: 16px;
+    padding: 18px 30px;
+   }
+   .footer-social{
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+   }
+   .footer-social a{
+    font-size: 18px;
    }
    .footer-bottom{
-    display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+   }
+   .footer-bottom-right{
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 0;
+   }
+   .footer-link{
+    font-size: 16px;
    }
 }
