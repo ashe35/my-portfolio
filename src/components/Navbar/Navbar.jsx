@@ -32,7 +32,7 @@ const Navbar = () => {
         <li><AnchorLink className='anchor-link'  href='#home'><p onClick={()=>handleMenuClick("home")}>Home</p></AnchorLink>{menu==="home"?<img src={underline} alt='Active section indicator'/>:<></>}</li>
         <li><AnchorLink className='anchor-link' offset={50} href='#about'><p onClick={()=>handleMenuClick("about")}>About Me</p></AnchorLink>{menu==="about"?<img src={underline} alt='Active section indicator'/>:<></>}</li>
         <li><AnchorLink className='anchor-link' offset={50} href='#services'><p onClick={()=>handleMenuClick("services")}>My Skills</p></AnchorLink>{menu==="services"?<img src={underline} alt='Active section indicator'/>:<></>}</li>
-        <li><AnchorLink className='anchor-link' offset={50} href='#work'><p onClick={()=>handleMenuClick("work")}>My Future work</p></AnchorLink>{menu==="work"?<img src={underline} alt='Active section indicator'/>:<></>}</li>
+        <li><AnchorLink className='anchor-link' offset={50} href='#work'><p onClick={()=>handleMenuClick("work")}>My work</p></AnchorLink>{menu==="work"?<img src={underline} alt='Active section indicator'/>:<></>}</li>
         <li><AnchorLink className='anchor-link' offset={50} href='#contact'><p onClick={()=>handleMenuClick("contact")}>Contact</p></AnchorLink>{menu==="contact"?<img src={underline} alt='Active section indicator'/>:<></>}</li>
        </ul>
        <div className="nav-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>connect with me</AnchorLink></div>

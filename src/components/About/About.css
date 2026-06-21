@@ -1,74 +1,135 @@
 .about{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    gap: 80px;
-    margin: 40px 170px 80px 170px;
-
+    gap: 60px;
+    margin: 80px 170px;
 }
 .about-title{
-    position: relative;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .about-title h1{
-    padding: 0px 30px;
     font-size: 60px;
     font-weight: 600;
     color: white;
+    margin-bottom: 10px;
+}
+.title-underline{
+    width: 120px;
+    height: 4px;
+    background: linear-gradient(90deg, #00FF94 0%, #00D9FF 100%);
+}
+.about-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 100%;
+}
+.about-card{
+    background: rgba(30, 30, 40, 0.6);
+    border: 2px solid rgba(0, 217, 255, 0.3);
+    border-radius: 15px;
+    padding: 40px;
+    transition: all 0.3s ease;
+}
+.about-card:hover{
+    transform: translateY(-5px);
+    border-color: #00D9FF;
+    box-shadow: 0 10px 30px rgba(0, 217, 255, 0.3);
+}
+.card-icon{
+    color: #00D9FF;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.card-title{
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 15px;
+}
+.card-subtitle{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+.card-institution{
+    color: #888;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.card-description{
+    color: #B0B0B0;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+.card-period{
+    color: #00D9FF;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+.tech-stack-section{
+    width: 100%;
+}
+.tech-stack-header{
     display: flex;
     align-items: center;
     gap: 15px;
-    white-space: nowrap;
+    margin-bottom: 40px;
 }
-.about-title h1 .highlight{
-    background: linear-gradient(135deg, #B415FF 0%, #E91E63 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.tech-stack-header i{
+    font-size: 40px;
+    color: #00D9FF;
+}
+.tech-stack-header h2{
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+}
+.about-skills-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    width: 100%;
+}
+.skill-category{
+    background: rgba(30, 30, 40, 0.6);
+    border: 2px solid rgba(180, 21, 255, 0.2);
+    border-radius: 15px;
+    padding: 25px;
+    transition: all 0.3s ease;
+}
+.skill-category:hover{
+    border-color: #B415FF;
+    background: rgba(30, 30, 40, 0.8);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(180, 21, 255, 0.2);
+}
+.category-title{
+    color: #00D9FF;
+    font-size: 14px;
     font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
 }
-.about-title img{
-    display: none;
-}
-.about-sections{
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-    width: 100%;
-}
-.about-right{
-    display: flex;
-    flex-direction:column;
-    gap: 40px;
-    max-width: 900px;
-    width: 100%;
-}
-.about-para{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.6;
-}
-.about-para .crypto-highlight{
-    color: #4A90E2;
-}
-.about-skills{
+.skill-tags{
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px;
 }
 .skill-tag{
-    padding: 12px 24px;
-    background: rgba(180, 21, 255, 0.1);
-    border: 2px solid #B415FF;
-    border-radius: 30px;
+    padding: 8px 16px;
+    background: rgba(50, 50, 60, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -76,14 +137,15 @@
 .skill-tag:hover{
     background: linear-gradient(135deg, #B415FF 0%, #DF8908 100%);
     border-color: transparent;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 20px rgba(180, 21, 255, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(180, 21, 255, 0.4);
 }
 .about-achievements{
     display: flex;
     width: 100%;
     justify-content: space-around;
-    margin-bottom: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 .about-achievement{
     display: flex;
@@ -110,33 +172,48 @@
 }
 @media (max-width:768px) {
     .about{
-        gap: 50px;
+        gap: 40px;
         margin: 50px 20px;
-        align-items: start;
+        align-items: center;
+    }
+    .about-title{
+        align-items: center;
     }
     .about-title h1{
         font-size: 40px;
-        padding: 0;
-        flex-wrap: wrap;
-        justify-content: center;
+        text-align: center;
     }
-    .about-title img{
-        width: 130px;
-        right: -20px;
+    .about-cards{
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
-    .about-sections{
-        flex-direction: column;
+    .about-card{
+        padding: 30px;
     }
-    .about-para{
-        font-size: 16px;
-        line-height: 28px;
+    .card-icon{
+        font-size: 36px;
+    }
+    .card-title{
+        font-size: 24px;
+    }
+    .card-subtitle{
+        font-size: 18px;
+    }
+    .about-skills-grid{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .skill-category{
+        padding: 20px;
+    }
+    .category-title{
+        font-size: 12px;
     }
     .skill-tag{
-        font-size: 14px;
-        padding: 10px 20px;
+        font-size: 13px;
+        padding: 7px 14px;
     }
     .about-achievements{
-        justify-content: center;
         flex-direction: column;
         gap: 40px;
         align-items: center;
@@ -145,13 +222,11 @@
         display: none;
     }
     .about-achievement{
-        gap: 10px;
         width: 100%;
         max-width: 300px;
     }
     .about-achievement h1{
         font-size: 50px;
-        font-weight: 700;
     }
     .about-achievement p{
         text-align: center;

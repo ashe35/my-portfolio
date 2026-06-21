@@ -7,18 +7,25 @@ const Hero = () => {
   return (
     <div id='home' className='hero'>
       <div className="hero-content">
-        <img src={profile_img} alt="Ashetu Desta" />
-        <div className="hero-text">
-          <h1>
-            <span className="intro">I am </span>
-            <span className="name">Ashetu Desta</span>
-            <span className="intro">, a </span>
-            <span className="role">frontend developer </span>
-            <span className="intro">creating clean, fast, and modern digital experiences with researcher cryptography expertise from Ethiopia.</span>
-          </h1>
-          <p>Frontend Developer & Researcher Cryptography</p>
+        <div className="hero-left">
+          <div className="terminal-command">
+            <span className="command-prompt">$</span> whoami
+          </div>
+          <h1 className="hero-name">Ashetu Desta</h1>
+          <p className="hero-role">Full Stack Developer_</p>
+          <p className="hero-description">
+            Crafting modern web solutions with expertise in full-stack development, 
+            AI integration, and cybersecurity.
+          </p>
           <div className="hero-action">
-            <div className="hero-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>connect with me</AnchorLink></div>
+            <a href="/Ashetu_Desta_CV.pdf" download="Ashetu_Desta_CV.pdf" className="hero-button download-cv">
+              <i className="fas fa-download"></i> Download CV
+            </a>
+          </div>
+        </div>
+        <div className="hero-right">
+          <div className="profile-circle">
+            <img src={profile_img} alt="Ashetu Desta" />
           </div>
         </div>
       </div>

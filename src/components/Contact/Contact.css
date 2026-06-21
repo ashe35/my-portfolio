@@ -23,7 +23,7 @@
     white-space: nowrap;
 }
 .contact-title h1 .highlight-touch{
-    background: linear-gradient(135deg, #B415FF 0%, #E91E63 100%);
+    background: linear-gradient(135deg, #00D9FF 0%, #00FF94 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -47,10 +47,10 @@
     line-height: 1.2;
 }
 .contact-left h1 .lets{
-    color: #B415FF;
+    color: #00D9FF;
 }
 .contact-left h1 .talk{
-    background: linear-gradient(135deg, #DF8908 0%, #FF6B35 100%);
+    background: linear-gradient(135deg, #00FF94 0%, #00D9FF 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -65,7 +65,7 @@
     margin: 10px 0;
 }
 .contact-email-link a{
-    color: #B415FF;
+    color: #00D9FF;
     text-decoration: none;
     font-size: 22px;
     display: flex;
@@ -74,7 +74,7 @@
     transition: 0.3s;
 }
 .contact-email-link a:hover{
-    color: #DF8908;
+    color: #00D9FF;
     transform: translateX(5px);
 }
 .contact-email-link i{
@@ -98,7 +98,7 @@
     transition: 0.3s;
 }
 .contact-detail a:hover{
-    color: #B415FF;
+    color: #00D9FF;
 }
 .contact-right{
     display: flex;
@@ -125,9 +125,9 @@
 }
 .contact-right input:focus{
     outline: none;
-    border-color: #B415FF;
+    border-color: #00D9FF;
     background: #32323c;
-    box-shadow: 0 0 15px rgba(180, 21, 255, 0.2);
+    box-shadow: 0 0 15px rgba(0, 217, 255, 0.3);
 }
 .contact-right textarea{
     width: 650px;
@@ -143,15 +143,15 @@
 }
 .contact-right textarea:focus{
     outline: none;
-    border-color: #B415FF;
+    border-color: #00D9FF;
     background: #32323c;
-    box-shadow: 0 0 15px rgba(180, 21, 255, 0.2);
+    box-shadow: 0 0 15px rgba(0, 217, 255, 0.3);
 }
 .contact-submit{
     border: none;
-    color: white;
+    color: #000;
     border-radius: 50px;
-    background: linear-gradient(264deg,#DF8908 -5.09%,#B415FF 106.28%);
+    background: linear-gradient(135deg, #00FF94 0%, #00D9FF 100%);
     font-size: 16px;
     padding: 14px 40px;
     margin-bottom: 50px;
@@ -163,7 +163,7 @@
 }
 .contact-submit:hover{
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(180, 21, 255, 0.4);
+    box-shadow: 0 8px 25px rgba(0, 217, 255, 0.4);
 }
 .success-message{
     background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
@@ -198,7 +198,7 @@
     .contact{
         gap: 40px;
         margin: 50px 20px;
-        align-items: start;
+        align-items: center;
     }
     .contact-title h1{
         padding: 0;

@@ -6,18 +6,18 @@ const Services_Data = [
     },
     {
         s_no:"02",
-        s_name:"Graphics design",
-        s_desc:"Designing visually appealing graphics that communicate ideas clearly and creatively."
+        s_name:"Backend Development",
+        s_desc:"Building robust APIs and server-side applications with Node.js, Express, and Python frameworks."
     },
     {
         s_no:"03",
-        s_name:"Social media",
-        s_desc:"Managing and creating engaging content to grow brand presence on social platforms."
+        s_name:"API Development",
+        s_desc:"Creating RESTful APIs and integrating third-party services for seamless data exchange."
     },
     {
         s_no:"04",
-        s_name:"Responsive Design",
-        s_desc:"Creating websites that adapt seamlessly to all screen sizes and devices for optimal user experience."
+        s_name:"Database Design",
+        s_desc:"Designing efficient database schemas and queries for MongoDB, MySQL, and PostgreSQL."
     },
     {
         s_no:"05",
@@ -26,8 +26,8 @@ const Services_Data = [
     },
     {
         s_no:"06",
-        s_name:"Performance Optimization",
-        s_desc:"Optimizing websites for faster load times, smooth interactions, and better user experience across all devices."
+        s_name:"AI/ML Integration",
+        s_desc:"Integrating machine learning models into web applications using TensorFlow and scikit-learn."
     },
 ]
  

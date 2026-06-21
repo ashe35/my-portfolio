@@ -1,6 +1,6 @@
 # Portfolio Website - Ashetu Desta
 
-A modern, responsive portfolio website showcasing my work as a Frontend Developer and Cryptography Researcher.
+A modern, responsive portfolio website showcasing my work as a Full Stack Developer and Cryptography Researcher.
 
 ## 🚀 Features
 

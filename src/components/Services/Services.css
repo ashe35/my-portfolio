@@ -25,7 +25,8 @@
     gap: 12px;
     padding: 30px 28px;
     border-radius: 10px;
-    border: 2px solid white;
+    background: rgba(30, 30, 40, 0.6);
+    border: 2px solid rgba(180, 21, 255, 0.3);
     transition: 0.4s;
     cursor: pointer;
 }
@@ -38,13 +39,12 @@
 .services-format h3{
     font-size: 18px;
     font-weight: 600;
+    color: #00D9FF;
 }
 .services-format h2{
     font-size: 24px;
     font-weight: 800;
-    background: linear-gradient(270deg,#DF8908 50%,#B415FF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: white;
 }
 .services-format p{
     color: #d4d4d4;
@@ -57,6 +57,8 @@
     gap: 12px;
     align-items: center;
     margin-top: 8px;
+    color: #888;
+    transition: 0.3s;
 }
 .services-readmore p{
     font-size: 13px;
@@ -65,15 +67,17 @@
     width: 18px;
 }
 .services-format:hover{
-    border: 2px solid #B415FF;
-    background: rgba(180, 21, 255, 0.05);
-    transform: translateY(-3px);
-    transition: 0.3s;
-    box-shadow: 0 5px 20px rgba(180, 21, 255, 0.2);
+    border-color: #00D9FF;
+    background: rgba(30, 30, 40, 0.8);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 217, 255, 0.3);
+}
+.services-format:hover .services-readmore{
+    color: #00D9FF;
 }
 @media (max-width:768px) {
     .services{
-        align-items: start;
+        align-items: center;
         gap: 50px;
         margin: 50px 20px;
     }

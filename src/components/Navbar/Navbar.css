@@ -14,14 +14,16 @@
 .nav-connect{
     padding: 12px 28px;
     border-radius: 50px;
-    background: linear-gradient(90deg, #B415FF 0%, #DF8908 100%);
+    background: linear-gradient(135deg, #00FF94 0%, #00D9FF 100%);
+    color: #000;
     font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
     transition: 0.3s;
 }
 .nav-connect:hover{
-    transform: scale(1.02);
-    box-shadow: 0 2px 8px rgba(180, 21, 255, 0.2);
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(0, 217, 255, 0.4);
 }
 .nav-menu li{
     display: flex;
